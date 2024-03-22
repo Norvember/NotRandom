@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap - Prebuilt Layout</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet" />
+  </head>
+  <!-- HEADER -->
+  <body>
+    <div class="jumbotron jumbotron-fluid text-center">
+      <h1 class="display-4">NOT RANDOM.ORG&nbsp; &nbsp;&nbsp;</h1>
+      <img src="favicon.png" width="100" height="100" alt="" />
+      <p class="lead">
+        Easily build your page using the Bootstrap components from the Insert
+        panel.
+      </p>
+      <hr class="my-4" />
+      <p>
+        This is a simple hero unit, a simple jumbotron-style component for
+        calling extra attention to featured content or information.
+      </p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </p>
+    </div>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-6 offset-lg-3">
+          <p>
+            Click outside the blue container to select this
+            <strong>row</strong>. Columns are always contained within a row.
+            <strong
+              >Rows are indicated by a dashed grey line and rounded
+              corners</strong
+            >.
+          </p>
+          <div class="container">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" onclick="showPage(0)"
+                  >Priority</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="showPage(1)">Time</a>
+              </li>
+            </ul>
+          </div>
+          <style>
+            /* Set background color for pages */
+            #priorityPage {
+              background-color: #f8f9fa; /* Light gray */
+            }
+
+            #timePage {
+              background-color: #e9ecef; /* Lighter gray */
+            }
+          </style>
+          <div class="container" style="background-color: #fff22f">
+            <div class="row">
+              <div class="col" id="priorityPage">
+                <h2>Priority</h2>
+                <p>This is the content for the Priority page.</p>
+                <div class="text-center">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter text"
+                    style="margin-bottom: 10px"
+                  />
+                  <div class="input-group">
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Min"
+                      style="margin-right: 5px"
+                    />
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Max"
+                      style="margin-left: 5px"
+                    />
+                  </div>
+                  <button class="btn btn-primary" style="margin-top: 10px">
+                    Generate
+                  </button>
+                </div>
+              </div>
+              <div class="col" id="timePage" style="display: none;">
+                <h2>Time</h2>
+                <p>This is the content for the Priority page.</p>
+                <div class="text-center">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter text"
+                    style="margin-bottom: 10px"
+                  />
+                  <div class="input-group">
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Min"
+                      style="margin-right: 5px"
+                    />
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Max"
+                      style="margin-left: 5px"
+                    />
+                  </div>
+                  <button class="btn btn-primary" style="margin-top: 10px">
+                    Generate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>&nbsp;</p>
+        </div>
+        <div class="col-lg-6 offset-lg-3"></div>
+      </div>
+
+      <hr class="fixed-bottom" style="bottom: 75px" />
+      <div class="row fixed-bottom">
+        <div class="text-center col-lg-6 offset-lg-3">
+          <h4>Footer</h4>
+          <p>
+            Copyright &copy; 2020 &middot; All Rights Reserved &middot;
+            <a href="#">My Website</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

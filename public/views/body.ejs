@@ -1,0 +1,80 @@
+
+<body>
+    <div class="jumbotron jumbotron-fluid text-center">
+      <h1 class="display-4">NOT RANDOM.ORG&nbsp; &nbsp;&nbsp;</h1>
+      <img src="favicon.png" width="100" height="100" alt="" />
+      <p class="lead">
+        Easily build your page using the Bootstrap components from the Insert
+        panel.
+      </p>
+      <hr class="my-4" />
+      <p>
+        This is a simple hero unit, a simple jumbotron-style component for
+        calling extra attention to featured content or information.
+      </p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </p>
+    </div>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-6 offset-lg-3">
+          <p>
+            Click outside the blue container to select this
+            <strong>row</strong>. Columns are always contained within a row.
+            <strong
+              >Rows are indicated by a dashed grey line and rounded
+              corners</strong
+            >.
+          </p>
+          <div class="container">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" onclick="showPage(0)"
+                  >Priority</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="showPage(1)">Time</a>
+              </li>
+            </ul>
+          </div>
+          <style>
+            /* Set background color for pages */
+            #priorityPage {
+              background-color: #f8f9fa; /* Light gray */
+            }
+
+            #timePage {
+              background-color: #e9ecef; /* Lighter gray */
+            }
+          </style>
+          <div class="container" style="background-color: #fff22f">
+            <div class="row">
+              <%- include('panel', { pageId: 'priorityPage', shouldDisplay: 'block' }) -%>
+              <%- include('panel', { pageId: 'timePage', shouldDisplay: 'none' }) -%>
+            </div>
+          </div>
+          <p>&nbsp;</p>
+        </div>
+        <div class="col-lg-6 offset-lg-3"></div>
+      </div>
+
+      <hr class="fixed-bottom" style="bottom: 75px" />
+      <div class="row fixed-bottom">
+        <div class="text-center col-lg-6 offset-lg-3">
+          <h4>Footer</h4>
+          <p>
+            Copyright &copy; 2020 &middot; All Rights Reserved &middot;
+            <a href="#">My Website</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/Bootstrap/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/Bootstrap/popper.min.js"></script>
+    <script src="js/Bootstrap/bootstrap-4.4.1.js"></script>
+  </body>
